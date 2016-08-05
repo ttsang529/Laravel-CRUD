@@ -1,6 +1,9 @@
-/vendor
-/node_modules
-/public/storage
-Homestead.yaml
-Homestead.json
-.env
+app/Listeners/
+app/Policies/
+resources/views/vendor/
+storage/app/
+storage/download/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+storage/logs/*.logs

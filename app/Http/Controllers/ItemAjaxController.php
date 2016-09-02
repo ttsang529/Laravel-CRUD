@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Item;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
 class ItemAjaxController extends Controller
 {
@@ -22,6 +24,14 @@ class ItemAjaxController extends Controller
     public function index(Request $request)
     {
         $items = Item::latest()->paginate(5);
+        // create a log channel
+        //$log = new Logger('name');
+        //$log->pushHandler(new StreamHandler('/var/laravel/CRUD/storage/logs/laravel.log', Logger::WARNING));
+
+        // add records to the log
+        //$log->warning('Log message',json_decode(json_encode($items), true));
+        //$log->error('testtest1');
+
         return response()->json($items);
     }
 

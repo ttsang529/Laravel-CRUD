@@ -41,7 +41,7 @@
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
 		        <h4 class="modal-title" id="myModalLabel">Create Item</h4>
 		      </div>
 		      <div class="modal-body">
@@ -111,6 +111,7 @@
 
         <script type="text/javascript">
     	   var url = "<?php echo route('item-ajax.index')?>";
+				 //console.log(url);
         </script>
         <script src="/js/item-ajax.js"></script> 
 
